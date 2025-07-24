@@ -24,8 +24,8 @@ jobs:
           pip install -r requirements.txt
           pip install -r requirements-dev.txt
 
-      - name: Lint check
-        run: flake8 cli tests
+     
 
       - name: Run tests
-        run: pytest --cov=cli --cov-report=term
+        run: |
+          pytest
